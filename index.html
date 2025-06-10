@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix Mailer</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <!-- Bootstrap@5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <main id="main" class="main">
+      <!-- Loader div -->
+      <!-- <div class="loader" id="loader"></div> -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="#" class="logo d-flex align-items-center">
+            <!-- <img src="{% static 'img/hrm-logo.png' %}" alt="logo" class="mx-auto"> -->
+            <span class="d-none d-lg-block">Mix Mailer</span>
+          </a>
+          <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div>
+        <div class="search-bar mt-3">
+            <form class="search-form d-flex align-items-center" method="get">
+                <div class="input-group menu-search mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+          </div>
+
+        <!-- Cache clear -->
+        <div class="cache-clear">
+          
+        </div>
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-bell"></i>
+                <span class="badge bg-primary badge-number">4</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                <li class="dropdown-header">
+                  You have 4 new notifications
+                  <a href="#">
+                    <span class="badge rounded-pill bg-primary p-2 ms-2">View all</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+                <li class="notification-item">
+                  <i class="bi bi-exclamation-circle text-warning"></i>
+                  <div>
+                    <h4>Lorem Ipsum</h4>
+                    <p>Quae dolorem earum veritatis oditseno</p>
+                    <p>30 min. ago</p>
+                  </div>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-footer">
+                  <a href="#">Show all notifications</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown pe-3">
+              <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <img src="img/jibon.jpg" alt="Profile" class="rounded-circle">
+                <span class="d-none d-md-block dropdown-toggle ps-2">Developer</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                  <h6>Developer</h6>
+                  <span>Admin Developer</span>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-gear"></i>
+                    <span>Account Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link dashboard-link" href="#" target="_blank">
+            <i class="fa fa-bullhorn"></i>
+                <span>Campaigns</span>
+            </a>
+        </li>
+        <!-- Setup rules -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#setup-rule-nav" 
+            data-bs-toggle="collapse" href="#">
+                <i class="fas fa-comment-alt"></i>
+                <span> Setup rules </span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="setup-rule-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="#">
+                        <i class="bi bi-circle"></i>
+                        <span>Rules</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <!-- Setting -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="fas fa-cog"></i>
+                <span>Setting</span>
+            </a>
+        </li>
+
+        <!-- Login -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="fas fa-sign-in-alt text-dark"></i>
+                <span>Login</span>
+            </a>
+        </li>
+      </ul>
+    </aside>
+
+    <h3 class="text-center my-5">Campaigns Dashboard</h3>
+    
+    </main>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Mix Mailer </span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Mix Mailer</a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!--========================= Js Library =============================================-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/js/main.js"></script>
+    <script src="/js/loader.js"></script>
+  </body>
+</html>
