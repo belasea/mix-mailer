@@ -1,7 +1,7 @@
 
-<img src="https://fluentcrm.com/wp-content/uploads/2022/08/How-to-Send-Bulk-Email-Without-Spamming-1.jpg" id='header'>
+<img src="img/email.png" id='header'>
 
-<h1 align="center">Mix Mailer</h1>
+<h1 align="center">Smart Mailer</h1>
 
 <div align="center">
 <!-- Gmail Account -->
@@ -41,3 +41,8 @@ alt='Jayed Hossain Jibon'
 </a>
 </div>
 <hr/>
+
+<h3>    
+    <a href="https://belasea.github.io/mix-mailer/" target="_blank">Live</a>
+</h3>
+
