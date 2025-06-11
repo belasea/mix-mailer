@@ -1405,3 +1405,27 @@ color: #188753 !important;
   color: #000000;
   text-align: center;
 }
+
+
+/* campaign */
+.new-campaign {
+    background-color: #f8f9fa;
+  }
+
+  .new-campaign .card {
+    border-radius: 1rem;
+  }
+
+  .new-campaign .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  }
+
+  .new-campaign label {
+    font-size: 0.95rem;
+  }
+
+  .new-campaign textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+  }
